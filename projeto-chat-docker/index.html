@@ -4,7 +4,7 @@
     <title>Chat em Tempo Real</title>
 </head>
 <body>
-    <h1>Chat em Tempo Real</h1>
+    <h1>Chat em ALO UTempo Real</h1>
     <div id="chat"></div>
     <input type="text" id="message" placeholder="Digite sua mensagem">
     <button id="send">Enviar</button>
@@ -14,7 +14,23 @@
 
         socket.onmessage = (event) => {
             const chatDiv = document.getElementById('chat');
-            chatDiv.innerHTML += `<p>${event.data}</p>`;
+
+            var leitor = new FileReader();
+            leitor.onload = function(event) {
+            // O conteúdo do arquivo de texto estará disponível em event.target.result
+            var conteudoDoArquivo = event.target.result;
+
+            var novoParagrafo = document.createElement("p");
+
+            novoParagrafo.textContent = conteudoDoArquivo;
+
+            // Adicione o novo parágrafo ao corpo do documento ou a qualquer elemento desejado
+            chatDiv.innerHTML += `<p>${novoParagrafo.textContent}</p>`
+            };
+
+            leitor.readAsText(event.data)
+
+            chatDiv.innerHTML += `<p>${mensagem}</p>`;
         };
 
         document.getElementById('send').addEventListener('click', () => {
