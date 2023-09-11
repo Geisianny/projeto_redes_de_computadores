@@ -32,13 +32,19 @@ Em resumo, este projeto visa criar um chat em tempo real usando Docker e WebSock
 ## :keyboard: Como executar o projeto
 
 * Construindo:
+  ```
 	Docker build -t chat-app .
-* Executando: 
+  ```
+* Executando:
+  ```
 	Docker run -p 3000:3000 -d chat-app
-Acesso: localhost:3000
+  ```
+  ***Acesso: localhost:3000***
 
 * Limpeza do contêiner:
+  ```
 	Docker stop <container_id>
+  ```
 
 ## :hammer_and_wrench: Tecnologias Usadas
 
