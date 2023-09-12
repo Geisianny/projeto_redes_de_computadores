@@ -1,0 +1,111 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o título do chat */
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+/* Estilo para a área do chat */
+#chat {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px auto; /* Centralize horizontalmente */
+    max-width: 600px; /* Largura máxima */
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Empilhe as mensagens verticalmente */
+    align-items: flex-start; /* Alinhe as mensagens à esquerda */
+}
+
+/* Estilo para as mensagens recebidas */
+#chat .received {
+    background-color: #f4f4f4;
+    border: 2px solid #236b0c;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 70%;
+    align-self: flex-start;
+}
+
+/* Estilo para as mensagens enviadas */
+#chat .sent {
+    background-color: #f4f4f4;
+    border: 2px solid #f80404;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 70%;
+    align-self: flex-end;
+}
+
+#message-container {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 400px; /* Largura máxima menor */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 18px;
+    flex: 1;
+}
+
+/* Estilo para o botão de envio */
+#send {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#send:hover {
+    background-color: #0056b3;
+}
+
+#chat p {
+    background-color: #f4f4f4;
+    border: 2px solid #0f0d70; /* Borda mais grossa */
+    border-radius: 20px; /* Borda mais arredondada */
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    line-height: 1.4;
+    max-width: 70%; /* Largura máxima para evitar que as mensagens se estendam demais */
+    align-self: flex-start; /* Alinhe as mensagens recebidas à esquerda */
+}
