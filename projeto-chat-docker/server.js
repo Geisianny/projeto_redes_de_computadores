@@ -7,6 +7,14 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
+// Configurando o middleware para servir arquivos estáticos
+app.use(express.static(__dirname));
+
+// Rota para servir o favicon.ico
+app.get('/favicon.ico', (req, res) => {
+    res.sendFile(path.join(__dirname, 'favicon.ico'));
+});
+
 // Configurando a rota para a página inicial
 app.get('/', (req, res) => {
      res.sendFile(path.join(__dirname, 'index.html'));
