@@ -55,4 +55,4 @@ Em resumo, este projeto visa criar um chat em tempo real usando Docker e WebSock
 *   Versão 18.17.0
 
 ## :construction: Status do Projeto
-Em construção...
+Finalizado.
