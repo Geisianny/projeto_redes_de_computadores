@@ -56,3 +56,5 @@ Em resumo, este projeto visa criar um chat em tempo real usando Docker e WebSock
 
 ## :construction: Status do Projeto
 Finalizado.
+
+![image](https://github.com/Geisianny/projeto_redes_de_computadores/assets/95537248/4d1c4965-76bf-4236-a823-7f26709e653e)
